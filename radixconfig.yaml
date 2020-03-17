@@ -14,8 +14,8 @@ spec:
     - name: echo
       src: ./echo
       ports:
-      - name: http
-        port: 3000
+        - name: http
+          port: 3000
       public: false
       environmentConfig:
         - environment: production
@@ -46,13 +46,13 @@ spec:
               cpu: "20m"
           replicas: 2
       secrets:
-       - MY_SUPER_SECRET
-       - CONFLICTING_VARIABLE
+        - MY_SUPER_SECRET
+        #- CONFLICTING_VARIABLE
     - name: www
       src: ./www
       ports:
-       - name: http
-         port: 3001
+        - name: http
+          port: 3001
       public: true
       environmentConfig:
         - environment: production
