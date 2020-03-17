@@ -46,8 +46,8 @@ spec:
               cpu: "20m"
           replicas: 2
       secrets:
+        - CONFLICTING_VARIABLE
         - MY_SUPER_SECRET
-        #- CONFLICTING_VARIABLE
     - name: www
       src: ./www
       ports:
