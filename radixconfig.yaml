@@ -22,7 +22,6 @@ spec:
           variables:
             PORT: 3000
             NODE_ENV: "production"
-            CONFLICTING_VARIABLE: "test"
           monitoring: true
           resources:
             requests:
@@ -46,7 +45,6 @@ spec:
               cpu: "20m"
           replicas: 2
       secrets:
-        - CONFLICTING_VARIABLE
         - MY_SUPER_SECRET
     - name: www
       src: ./www
