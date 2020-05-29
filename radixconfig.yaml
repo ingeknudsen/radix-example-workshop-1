@@ -86,3 +86,8 @@ spec:
   dnsAppAlias:
     environment: development
     component: www
+    pec:
+  dnsExternalAlias:
+    - alias: iknu.alias.com
+      environment: development
+      component: www
